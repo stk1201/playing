@@ -1,3 +1,3 @@
 kbt dayo!!!
-satoko dayo!!!
-aaaaa
+satoko dayo!!! \n
+karitekitaneko
