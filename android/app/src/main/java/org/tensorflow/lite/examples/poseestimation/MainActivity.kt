@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
             ActivityResultContracts.RequestPermission()
         ) { isGranted: Boolean ->
             if (isGranted) {
+                System.out.printlf("let's start");
                 // Permission is granted. Continue the action or workflow in your
                 // app.
                 openCamera()
