@@ -15,7 +15,6 @@ limitations under the License.
 */
 
 package org.tensorflow.lite.examples.poseestimation
-
 import android.Manifest
 import android.app.AlertDialog
 import android.app.Dialog
@@ -39,7 +38,7 @@ import org.tensorflow.lite.examples.poseestimation.data.Device
 import org.tensorflow.lite.examples.poseestimation.ml.*
 
 class MainActivity : AppCompatActivity() {
-    companion object {
+    companion object {//コンパニオンオブジェクトの定義
         private const val FRAGMENT_DIALOG = "dialog"
     }
 
@@ -130,7 +129,7 @@ class MainActivity : AppCompatActivity() {
             isClassifyPose = isChecked
             isPoseClassifier()
         }
-
+//起動後
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -180,8 +179,7 @@ class MainActivity : AppCompatActivity() {
             Process.myUid()
         ) == PackageManager.PERMISSION_GRANTED
     }
-
-    // open camera
+// カメラの実行
     private fun openCamera() {
         if (isCameraPermissionGranted()) {
             if (cameraSource == null) {
